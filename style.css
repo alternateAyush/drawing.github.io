@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+#pointer{
+    position: absolute;
+    color: yellow;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+    opacity: 1; 
+
+}
+#board{
+    box-sizing: border-box;
+    background-color:rgb(0,0,0);
+    border: 5px solid brown;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0.9;
+    z-index: 1;
+}
+.draw-lines{
+    display: inline-block;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+#menu{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2px 0px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    /* width: 34px;
+    height: 202px; */
+    z-index: 2;
+}
+.menu-items{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 0px 20px;
+}
+.menu-form{
+    opacity: 0.8;
+    margin: 0px 10px;
+}
+#demo{
+    background-color: rgb(255,255,255);
+    opacity: 1;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0px 20px;
+    cursor: pointer;
+}

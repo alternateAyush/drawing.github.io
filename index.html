@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bb7f191b42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Drawing Board</title>
+</head>
+<body>
+    <i id="pointer" class="fa-solid fa-pencil"></i>
+    <div id="board">
+        <div id="menu">
+            <i class="fa-solid fa-pencil menu-items"></i>
+            <i class="fa-solid fa-eraser menu-items"></i>
+            <i class="fa-solid fa-plus menu-items"></i>
+            <i class="fa-solid fa-minus menu-items"></i>
+            <i class="fa-solid fa-trash menu-items"></i>
+            <label for="r-value"  class=" menu-form">R: </label>
+            <input type="number" id="r-value" min="0" max="255"  class="menu-form " placeholder="255"/>            
+            <label for="g-value"  class=" menu-form">G: </label>
+            <input type="number" id="g-value" min="0" max="255"  class=" menu-form " placeholder="255"/>            
+            <label for="b-value"  class=" menu-form">B: </label>
+            <input type="number" id="b-value" min="0" max="255"  class="menu-form " placeholder="255"/> 
+            <button id="get-color" type="button" class="menu-form">Get Color</button>
+            <div id="demo"></div>
+        </div>
+    </div>   
+    <script src="jquery-3.6.1.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
